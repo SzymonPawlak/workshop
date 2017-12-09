@@ -1,0 +1,9 @@
+<div class="InputTweet">
+  <div class="InputTweet-title">
+    Dodaj tweeta!
+  </div>
+
+  <input #tweet placeholder="tweet" required>
+  <input #nickName placeholder="nickName" required>
+  <button (click)="addTweet(tweet.value, nickName.value)"> dodaj tweeta!</button>
+</div>

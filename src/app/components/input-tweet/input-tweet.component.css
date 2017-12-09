@@ -1,0 +1,14 @@
+.InputTweet {
+    margin: 50px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.InputTweet-title {
+    margin: 20px;
+    text-align: center;
+}
