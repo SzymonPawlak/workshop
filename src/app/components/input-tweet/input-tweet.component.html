@@ -3,7 +3,35 @@
     Dodaj tweeta!
   </div>
 
-  <input #tweet placeholder="tweet" required>
-  <input #nickName placeholder="nickName" required>
-  <button (click)="addTweet(tweet.value, nickName.value)"> dodaj tweeta!</button>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input #tweet type="text" class="form-control" placeholder="Tweet">
+      </div>
+      <!-- /input-group -->
+    </div>
+    <!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input #nickName type="text" class="form-control" placeholder="Nick">
+        <span class="input-group-btn">
+          <button (click)="addTweet(tweet.value, nickName.value)" class="btn btn-default" type="button">Dodaj Tweeta!</button>
+        </span>
+      </div>
+      <!-- /input-group -->
+    </div>
+    <!-- /.col-lg-6 -->
+  </div>
+  <!-- /.row -->
+
+  <!-- <div class="form-group">
+    <div class="input-group">
+      <label for="tweet">Tweet:</label>
+      <textarea #tweet type="text" class="form-control" id="tweet"> </textarea>
+
+      <label for="nickName">Nick:</label>
+      <input #nickName type="text" class="form-control" id="nickName">
+    </div>
+  </div>
+  <button (click)="addTweet(tweet.value, nickName.value)" type="button" class="btn btn-default">dodaj tweeta!</button> -->
 </div>
