@@ -1,14 +1,14 @@
-.Tweeter{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    
-}
+/*.Tweeter{*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*height: 100vh;*/
+    /*flex-direction: column;*/
+    /**/
+/*}*/
 
-.Tweeter-wall {
-    border-left: solid;
-}
+/*.Tweeter-wall {*/
+    /*border-left: solid;*/
+/*}*/
 
-.Tweeter-input {
-}
+/*.Tweeter-input {*/
+/*}*/

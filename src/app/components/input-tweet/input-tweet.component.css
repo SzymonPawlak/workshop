@@ -1,16 +1,20 @@
-.InputTweet {
-    width: 600px;
-    margin: 50px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+.InputTweet-title {
+  margin-bottom: 3rem;
 }
 
-.InputTweet-title {
-    font-size: 24px;
-    margin: 20px;
-    text-align: center;
-}
+/*.InputTweet {*/
+    /*width: 600px;*/
+    /*margin: 50px;*/
+    /*border: solid;*/
+    /*border-width: 1px;*/
+    /*border-radius: 5px;*/
+    /*padding-bottom: 20px;*/
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+/*}*/
+
+/*.InputTweet-title {*/
+    /*font-size: 24px;*/
+    /*margin: 20px;*/
+    /*text-align: center;*/
+/*}*/
