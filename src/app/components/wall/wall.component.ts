@@ -11,7 +11,7 @@ import { Tweet } from '../../models/tweet.model';
   templateUrl: './wall.component.html',
   styleUrls: ['./wall.component.css']
 })
-export class WallComponent implements OnInit {
+export class WallComponent {
 
   public tweets: Tweet[];
 
@@ -23,8 +23,4 @@ export class WallComponent implements OnInit {
           this.tweets = tweets;
         });
   }
-
-  ngOnInit() {
-  }
-
 }

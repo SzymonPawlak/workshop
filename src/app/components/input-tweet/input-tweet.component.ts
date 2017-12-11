@@ -31,7 +31,7 @@ export class InputTweetComponent implements OnInit {
 
   }
 
-  addTweet(tweet: string, nickName: string) {
+  addTweet(tweet: string, nickName: string): void {
 
     this.tweet = new Tweet(new Date(), tweet, nickName);
     this.tweetsService.addTweet(this.tweet);

@@ -1,23 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-interface Tweet {
-  date: Date;
-  tweet: string;
-  nickName: string;
-}
+// Models
+import {Tweet} from '../../models/tweet.model';
 
 @Component({
   selector: 'app-tweet',
   templateUrl: './tweet.component.html',
   styleUrls: ['./tweet.component.css']
 })
-export class TweetComponent implements OnInit {
+export class TweetComponent {
 
   constructor() { }
 
   @Input() tweet: Tweet;
-
-  ngOnInit() {
-  }
-
 }
