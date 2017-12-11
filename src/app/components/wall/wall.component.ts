@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+// Services
 import { TweetsService } from '../../services/tweets.service';
 
-interface Tweet {
-  date: Date;
-  tweet: string;
-  nickName: string;
-}
+// Models
+import { Tweet } from '../../models/tweet.model';
 
 @Component({
   selector: 'app-wall',

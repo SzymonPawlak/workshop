@@ -1,11 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
-interface Tweet {
-  date: Date;
-  tweet: string;
-  nickName: string;
-}
+// Models
+import { Tweet } from '../models/tweet.model';
 
 @Injectable()
 export class TweetsService {
