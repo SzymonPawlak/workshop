@@ -1,37 +1,17 @@
 <div class="InputTweet">
-  <div class="InputTweet-title">
+  <h1 class="InputTweet-title display-3">
     Dodaj tweeta!
-  </div>
+  </h1>
 
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="input-group">
-        <input #tweet type="text" class="form-control" placeholder="Tweet">
-      </div>
-      <!-- /input-group -->
+  <div>
+    <div class="form-group">
+      <textarea #tweet type="text" class="form-control form-control-lg" placeholder="Co słychać?"></textarea>
     </div>
-    <!-- /.col-lg-6 -->
-    <div class="col-lg-6">
-      <div class="input-group">
-        <input #nickName type="text" class="form-control" placeholder="Nick">
-        <span class="input-group-btn">
-          <button (click)="addTweet(tweet.value, nickName.value)" class="btn btn-default" type="button">Dodaj Tweeta!</button>
-        </span>
-      </div>
-      <!-- /input-group -->
+    <div class="form-group">
+        <input #nickName type="text" class="form-control form-control-lg" placeholder="Nick">
     </div>
-    <!-- /.col-lg-6 -->
-  </div>
-  <!-- /.row -->
-
-  <!-- <div class="form-group">
-    <div class="input-group">
-      <label for="tweet">Tweet:</label>
-      <textarea #tweet type="text" class="form-control" id="tweet"> </textarea>
-
-      <label for="nickName">Nick:</label>
-      <input #nickName type="text" class="form-control" id="nickName">
+    <div class="form-group">
+      <button (click)="addTweet(tweet.value, nickName.value)" class="btn btn-primary" type="button">Dodaj Tweeta!</button>
     </div>
   </div>
-  <button (click)="addTweet(tweet.value, nickName.value)" type="button" class="btn btn-default">dodaj tweeta!</button> -->
 </div>

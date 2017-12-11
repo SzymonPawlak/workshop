@@ -1,13 +1,12 @@
-
-<div class="Tweet">
-    <div class="Tweet-media thumbnail">
-        <img src="http://i.pravatar.cc/100">
-        <div class="Tweet-media-nickName"> {{ tweet.nickName }} </div>
+<div class="Tweet card">
+    <div class="Tweet-content card-body">
+      <h4 class="Tweet-media-nickName card-title">
+        <img class="Tweet-media-nickName-avatar" src="http://i.pravatar.cc/100">
+        {{ tweet.nickName }}
+      </h4>
+      <p class="Tweet-content-tweet card-text">{{ tweet.tweet }}</p>
+      <p class="Tweet-content-date card-text">
+        <small class="text-muted">{{ tweet.date | date: 'M/d/yy, h:mm:ss' }}</small>
+      </p>
     </div>
-
-    <div class="Tweet-content">
-        <span class="Tweet-content-date"> {{ tweet.date | date: 'M/d/yy, h:mm:ss' }} </span>
-        <span class="Tweet-content-tweet">{{ tweet.tweet }}</span>
-    </div>
-
 </div>
