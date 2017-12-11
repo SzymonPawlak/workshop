@@ -22,10 +22,10 @@ export class InputTweetComponent implements OnInit {
 
   ngOnInit() {
     const firstTweet = new Tweet(new Date(), 'To jest mój pierwszy tweet!', 'Leon');
-    const secondTweet = new Tweet(new Date(), 'Świetnie Leon, będę Cie obserwować!', 'Donald');
 
     this.tweetsService.addTweet(firstTweet);
     setTimeout( () => {
+      const secondTweet = new Tweet(new Date(), 'Świetnie Leon, będę Cie obserwować!', 'Donald');
       this.tweetsService.addTweet(secondTweet);
     }, this.timeToDisplayTweet);
 

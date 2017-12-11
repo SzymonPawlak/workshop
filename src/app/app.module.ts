@@ -11,7 +11,6 @@ import { TweetComponent } from './components/tweet/tweet.component';
 // Servics
 import { TweetsService } from './services/tweets.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
