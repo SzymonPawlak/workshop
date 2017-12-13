@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-// Services
-import { TweetsService } from '../../services/tweets.service';
-
-// Models
-import { Tweet } from '../../models/tweet.model';
-
 @Component({
   selector: 'app-input-tweet',
   templateUrl: './input-tweet.component.html',
@@ -13,27 +7,14 @@ import { Tweet } from '../../models/tweet.model';
 })
 export class InputTweetComponent implements OnInit {
 
-  constructor(
-    private tweetsService: TweetsService
-  ) { }
+  constructor() { }
 
-  public tweet: Tweet;
-  private timeToDisplayTweet = 3000;
+  public tweet: string;
 
   ngOnInit() {
-    const firstTweet = new Tweet(new Date(), 'To jest mój pierwszy tweet!', 'Leon');
-
-    this.tweetsService.addTweet(firstTweet);
-    setTimeout( () => {
-      const secondTweet = new Tweet(new Date(), 'Świetnie Leon, będę Cie obserwować!', 'Donald');
-      this.tweetsService.addTweet(secondTweet);
-    }, this.timeToDisplayTweet);
-
   }
 
   addTweet(tweet: string, nickName: string): void {
-
-    this.tweet = new Tweet(new Date(), tweet, nickName);
-    this.tweetsService.addTweet(this.tweet);
+    console.log(tweet + ' ' + nickName);
   }
 }

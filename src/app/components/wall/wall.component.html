@@ -1,10 +1,6 @@
-<div class="Wall">
-
-    <div class="Wall-tweet" *ngFor="let tweet of tweets">
+<div>
+    <div *ngFor="let tweet of tweets">
         <app-tweet [tweet]="tweet">
-
         </app-tweet>
-
     </div>
-
 </div>

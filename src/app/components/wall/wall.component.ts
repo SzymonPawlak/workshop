@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-// Services
-import { TweetsService } from '../../services/tweets.service';
-
-// Models
-import { Tweet } from '../../models/tweet.model';
-
 @Component({
   selector: 'app-wall',
   templateUrl: './wall.component.html',
@@ -13,14 +7,12 @@ import { Tweet } from '../../models/tweet.model';
 })
 export class WallComponent {
 
-  public tweets: Tweet[];
+  public tweets = [
+    'tweet1',
+    'tweet2',
+    'tweet3'
+  ];
 
-  constructor(
-    tweetsService: TweetsService
-  ) {
-    tweetsService.tweets$.subscribe(
-        tweets => {
-          this.tweets = tweets;
-        });
-  }
+  constructor() { }
+
 }
