@@ -1,17 +1,19 @@
-<div class="InputTweet">
-  <h1 class="InputTweet-title display-3">
-    Dodaj tweeta!
-  </h1>
+<form #tweetForm="ngForm" (ngSubmit)="onSubmit(inputData)">
+  <div class="InputTweet">
+    <h1 class="InputTweet-title display-3">
+      Dodaj tweeta!
+    </h1>
 
-  <div>
-    <div class="form-group">
-      <textarea #tweet type="text" class="form-control form-control-lg" placeholder="Co słychać?"></textarea>
-    </div>
-    <div class="form-group">
-        <input #nickName type="text" class="form-control form-control-lg" placeholder="Nick">
-    </div>
-    <div class="form-group">
-      <button (click)="addTweet(tweet.value, nickName.value)" class="btn btn-primary" type="button">Dodaj Tweeta!</button>
+    <div>
+      <div class="form-group">
+        <textarea [(ngModel)]="inputData.tweet" name="tweet" type="text" class="form-control form-control-lg" placeholder="Co słychać?" required></textarea>
+      </div>
+      <div class="form-group">
+        <input [(ngModel)]="inputData.nickName" name="nickName" type="text" class="form-control form-control-lg" placeholder="Nick" required>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit" [disabled]="!tweetForm.form.valid">Dodaj Tweeta!</button>
+      </div>
     </div>
   </div>
-</div>
+</form>

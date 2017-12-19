@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components
 import { AppComponent } from './app.component';
@@ -10,17 +11,28 @@ import { TweetComponent } from './components/tweet/tweet.component';
 
 // Servics
 import { TweetsService } from './services/tweets.service';
+import { TwiiterComponent } from './pages/twiiter/twiiter.component';
+
+// Routing
+import { RoutingModule } from './routing/routing.module';
+import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WallComponent,
     InputTweetComponent,
-    TweetComponent
+    TweetComponent,
+    TwiiterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RoutingModule,
+    RouterModule,
+    HttpClientModule
   ],
   providers: [
     TweetsService
