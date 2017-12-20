@@ -1,8 +1,12 @@
 <div class="Tweet card">
-    <div class="card-body">
-      <h4 class="card-title">
-        <img class="Tweet-media-nickName-avatar" src="http://i.pravatar.cc/100">
-      </h4>
-      <p class="card-text">{{ tweet }}</p>
-    </div>
+  <div class="card-body">
+    <h4 class="card-title">
+      <img class="Tweet-media-nickName-avatar" src="http://i.pravatar.cc/100">
+    </h4>
+    <p class="card-text">
+      <b>{{ tweet.nickName }}</b>
+      <i>({{ tweet.date | date: 'dd-MM-yyyy, H:mm:ss' }})</i>
+    </p>
+    <p class="card-text">{{ tweet.tweet }}</p>
+  </div>
 </div>

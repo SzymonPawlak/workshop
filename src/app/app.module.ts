@@ -8,6 +8,9 @@ import { WallComponent } from './components/wall/wall.component';
 import { InputTweetComponent } from './components/input-tweet/input-tweet.component';
 import { TweetComponent } from './components/tweet/tweet.component';
 
+// Services
+import { TweetService } from './services/tweet.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,9 @@ import { TweetComponent } from './components/tweet/tweet.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    TweetService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

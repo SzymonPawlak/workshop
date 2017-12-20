@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
 
+// Models
+import { Tweet } from '../../models/tweet.model';
+
 @Component({
   selector: 'app-tweet',
   templateUrl: './tweet.component.html',
@@ -9,5 +12,5 @@ export class TweetComponent {
 
   constructor() { }
 
-  @Input() tweet: string;
+  @Input() tweet: Tweet;
 }
