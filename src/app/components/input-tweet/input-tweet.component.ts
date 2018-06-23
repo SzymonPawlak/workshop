@@ -30,7 +30,6 @@ export class InputTweetComponent implements OnInit {
   private timeToDisplayTweet = 3000;
 
   ngOnInit() {
-    this.tweetsService.getTweet();
     const firstTweet = new Tweet(new Date(), 'To jest mój pierwszy tweet!', 'Leon');
 
     this.tweetsService.addTweet(firstTweet);
